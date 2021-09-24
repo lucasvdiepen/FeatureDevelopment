@@ -26,8 +26,6 @@ public class PathFollower : MonoBehaviour
     {
         transform.Translate(Vector3.forward * _speed * Time.deltaTime);
 
-        //Als de distance van transform naar de waypoint < _arrivalTreshold dan een nieuwe waypoint ophalen
-
         if (Vector3.Distance(transform.position, new Vector3(_currentWaypoint.GetPosition().x, transform.position.y, _currentWaypoint.GetPosition().z)) < _arrivalTreshold)
         {
             if (_currentWaypoint == _path.GetPathEnd()) PathComplete();
