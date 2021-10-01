@@ -3156,6 +3156,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1180301168, guid: c1b6a2c6066cc7240a57655ea740f6fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180301168, guid: c1b6a2c6066cc7240a57655ea740f6fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 89696599486582616, guid: c1b6a2c6066cc7240a57655ea740f6fc, type: 3}
       propertyPath: m_Name
       value: BaseEnemy

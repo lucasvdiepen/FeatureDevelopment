@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealthComponent : HealthComponent
 {
+    [SerializeField] private EnemyHealthUI _enemyHealthUI;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -15,7 +18,8 @@ public class EnemyHealthComponent : HealthComponent
     protected override void HandleTakeDamage()
     {
         base.HandleTakeDamage();
-        // update je health bar
+
+        _enemyHealthUI.UpdateUI(CurrentHealth / StartHealth);
     }
 
     protected override void Death()

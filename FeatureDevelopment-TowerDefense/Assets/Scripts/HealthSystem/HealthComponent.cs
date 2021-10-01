@@ -7,9 +7,15 @@ public class HealthComponent : MonoBehaviour
     [SerializeField] private float _startHealth;
 
     private float _currentHealth;
+
     public float CurrentHealth
     {
         get { return _currentHealth; }
+    }
+
+    public float StartHealth
+    {
+        get { return _startHealth; }
     }
 
     private void Awake()
