@@ -41,5 +41,9 @@ public class PathFollower : MonoBehaviour
     {
         Debug.Log("Einde path");
         _speed = 0;
+
+        FindObjectOfType<PlayerHealthComponent>().TakeDamage(1);
+
+        Destroy(gameObject);
     }
 }
