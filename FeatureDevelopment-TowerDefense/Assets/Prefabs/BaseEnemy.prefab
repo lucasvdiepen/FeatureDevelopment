@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8939483}
   - component: {fileID: 8939482}
   - component: {fileID: 8939485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyHealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 487724992}
   - component: {fileID: 487724994}
   - component: {fileID: 487724993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610938165}
   - component: {fileID: 610938166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 1180301168}
   - component: {fileID: 1180301170}
   - component: {fileID: 1180301169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1488408830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 1982378417}
   - component: {fileID: 1982378419}
   - component: {fileID: 1982378418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBarPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,9 @@ GameObject:
   - component: {fileID: 8347186192184781571}
   - component: {fileID: 5405644834119677775}
   - component: {fileID: 6459138011052984701}
-  m_Layer: 0
+  - component: {fileID: 494408538}
+  - component: {fileID: 158479967657021903}
+  m_Layer: 6
   m_Name: BaseEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,6 +529,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startHealth: 10
   _enemyHealthUI: {fileID: 8939485}
+--- !u!135 &494408538
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89696599486582616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &158479967657021903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89696599486582616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179b045ed251b954ea68a77567d913ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3086154277254477469
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1949433213783752830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,6 +639,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 469be7b6ffbeaac408d2c83220b2f015, type: 3}
       propertyPath: m_Name
       value: enemy_ufoRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469be7b6ffbeaac408d2c83220b2f015, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359809499644031025, guid: 469be7b6ffbeaac408d2c83220b2f015, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469be7b6ffbeaac408d2c83220b2f015, type: 3}
