@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyHealthComponent))]
+
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private HealthComponent _healthComponent;
+
+    private void Start()
     {
-        
+        _healthComponent = GetComponent<HealthComponent>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public HealthComponent GetHealthComponent()
     {
-        
+        return _healthComponent;
     }
 }
